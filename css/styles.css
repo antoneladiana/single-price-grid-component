@@ -139,6 +139,9 @@ footer{
 footer a {
     color: #3E52A3;
 }
+footer a:hover {
+    text-decoration: none;
+}
 
 /* ----------------------- MEDIA QUERIES --------------------------- */
 
