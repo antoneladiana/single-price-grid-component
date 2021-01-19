@@ -1,0 +1,165 @@
+/* -------------------- COLOR PALETTE ----------------------- */
+/* 
+    https://coolors.co/2ab2af-c0df34-e5eff5-98a6bd
+
+                    #2AB2AF Verdigris
+                    #C0DF34 Bitter Lemon
+                    #E5EFF5 Alice Blue
+                    #98A6BD Cadet Blue Crayola
+*/
+
+/* ----------------------- GLOBAL --------------------------- */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #E5EFF5;
+    color: #FFFFFF;
+}
+
+/* ----------------------- MAIN ----------------------------- */
+
+/* General */
+article {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(20, 100, 100, 0.3);
+    margin: 50px auto 20px;  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1.2fr 0.8fr 1fr;
+}
+article > div {
+    padding: 30px;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2AB2AF;
+    padding-bottom: 15px;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 6px;
+}
+
+/* Introduction */
+.introduction {
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+}
+.introduction h3 {
+    color: #C0DF34;
+}
+.introduction ul {
+    color: #98A6BD;
+}
+.introduction li {
+    display: inline;
+}
+
+/* Subscription */
+strong {
+    font-size: 32px;
+    font-weight: 700;
+    padding-right: 12px;
+}
+button {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #C0DF34;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px rgba(100, 100, 100, 0.3);
+    margin-top: 30px;
+    display: block;
+}
+button:hover {
+    background-color: #B1CB25;
+}
+.subscription {
+    background-color: #2AB2AF;
+}
+.subscription > p {
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.9);
+}
+.price {
+    display: flex;
+    align-items: center;
+}
+.price p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Description */
+.description {
+    background-color: rgba(42, 178, 175, 0.8);
+    border-radius: 0 0 10px 10px;
+}
+.description ul {
+    padding-top: 8px;
+}
+.description li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ----------------------- FOOTER --------------------------- */
+
+footer{ 
+    font-size: 11px;
+    text-align: center;
+    color: #98A6BD;
+}
+footer a {
+    color: #3E52A3;
+}
+
+/* ----------------------- MEDIA QUERIES --------------------------- */
+
+@media screen and (min-width: 800px) {
+
+    /* General */
+    article {
+        max-width: 640px;
+        margin: 120px auto 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 220px;
+    }
+    article > div {
+        padding: 35px 40px;
+    }
+
+    /* Introduction */
+    .introduction {
+        grid-column: 1 / 3;
+    }
+    .introduction li {
+        display: block;
+    }
+
+    /* Subscription */
+    .subscription {
+        border-radius: 0 0 0 10px;
+    }
+
+    /* Description */
+    .description {
+        border-radius: 0 0 10px 0;
+    }
+}
